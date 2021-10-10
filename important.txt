@@ -1,0 +1,18 @@
+1.To start a project in django 
+django-admin startproject <Name_of_project>
+
+2. To run django server
+python <server_name> runserver, 
+
+3. Django runs on MVT (Model View Template) Arch.  
+
+Model : Contains the info of how to create a database. It is meta data for a database. 
+
+View : Associated with Template. It pulls data from database i.e form model, processes 
+the data and pushes to template.
+
+Template : It is mainly HTML, CSS, JS but it has placeholders as view gives data to template, 
+as python variable, to see the output placeholders are their. 
+
+URL dispacher 
+
