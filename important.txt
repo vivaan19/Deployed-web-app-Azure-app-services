@@ -1,18 +1,59 @@
 1.To start a project in django 
 django-admin startproject <Name_of_project>
+This will create a folder of project_name and in it 
+exact project_name folder consists of important things of how to make a project. 
+Ex: I created "Sample" project. 
 
 2. To run django server
-python <server_name> runserver, 
+python <server_name> runserver,
+it will return the host name where website is hosted.  
+Search the host_name in brower.
 
 3. Django runs on MVT (Model View Template) Arch.  
 
-Model : Contains the info of how to create a database. It is meta data for a database. 
+-> Model : Contains the info of how to create a database. It is meta data for a database. 
 
-View : Associated with Template. It pulls data from database i.e form model, processes 
+-> View : Associated with Template. It pulls data from database i.e form model, processes 
 the data and pushes to template.
 
-Template : It is mainly HTML, CSS, JS but it has placeholders as view gives data to template, 
+-> Template : It is mainly HTML, CSS, JS but it has placeholders as view gives data to template, 
 as python variable, to see the output placeholders are their. 
 
-URL dispacher 
+4. The work of URL dispacher is to fetch link stored in database and retrive data from it. 
 
+5. Any Django project has atleast one app in it for working.
+Ex: There is a website and in it there are multiple apps webpages for differnt works, the main URL is same
+but after it we can add differnt webpages. 
+
+6. To create a app in a project in django use : 
+python manage.py startapp <name_of_app>
+This will create a folder of the app in which all things are there to work on it. 
+
+7. To see the subcommands for django use : 
+python manage.py 
+this will help to run commands if you forget the name of it. 
+
+8. There is url.py file in django which tracks of all url stored there and where it is redirecting.
+Ex: urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+This means that if we add /admin to main url, then that will redirect to the default admin 
+page of django.
+We can add multiple urlpatterns in this.
+
+9. To change django default home page to some other page, we have to follow these steps:
+    a. first make a app in project folder.
+
+    b. make a urls.py file in app, and copy the content of project urls.py
+    
+    c. In project urls.py add the path("", include("<app_name>.urls")) after path admin. 
+        this means that in home page the contents will be redirected to app_name.urls.
+    
+    d. Then come to app urls.py, import view from app_name, inside urlpatterns remove admin one 
+        and add the blank page one i.e : path("", views.index, name=<app_name>)
+    
+    e. Then go to views.py in app folder, add a function called index pass a parameter and import HttpResponse
+        and then return HttpResponse("<The required message at the home page>")
+    
+    f. After these steps go to same django home page and relode, you will see the required text. 
+    
