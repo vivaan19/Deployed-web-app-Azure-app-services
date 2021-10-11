@@ -1,11 +1,11 @@
 from django.shortcuts import render ,HttpResponse
 
-content = {
+content={
     "variable":"<This is the value of this variable>"
 }
 def index(request):
     # return HttpResponse("Hello World Changed the home page of django !!!")
-    return render(request, "index.htm")
+    return render(request, "index.html", content)
 def about(request):
     return HttpResponse("This is about page !!!")
 
