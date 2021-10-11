@@ -93,4 +93,19 @@ Steps:
     c. In the required function add the third parameter of render as the name of dictionary i.e content here.
     d. save it and run the server. 
 
-17. Use of bootstrap. 
+17. Use of bootstrap - use a starter file form bootstrap and paste in template. 
+
+18. Paste the code of navigation from bootstrap to the file in template. 
+
+19. Python manage.py makemigrations  : check any changes in the data base schema. 
+
+20. python manage.py migrate : imports some of the django tables for authentication. 
+
+21. To make a super user for django admin authentication.
+python manage.py createsuperuser
+
+22. To change header, title, index titile in admin page add :: 
+admin.site.site_header = ""
+admin.site.site_title = ""
+admin.site.index_title = ""
+in main priject urls file. 
