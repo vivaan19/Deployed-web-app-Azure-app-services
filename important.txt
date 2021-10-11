@@ -56,4 +56,16 @@ We can add multiple urlpatterns in this.
         and then return HttpResponse("<The required message at the home page>")
     
     f. After these steps go to same django home page and relode, you will see the required text. 
-    
+
+10. Static files are those files which anybody can see when they visit the url. 
+So here does not put any confidencial information. 
+
+11. There is a STATIC_URL = '/static/' in setting which is used to access static pages in our
+directory. 
+
+12. To create static pages do the following steps : 
+    a. First create a static folder in main project.
+    b. In setting go to the documentation of static and copy STATICFILES_DIRS.
+    c. Now we are creating only one static file so clear the var/www/static line.
+    d. Pate the code after static in setting. 
+    e. 
