@@ -64,8 +64,23 @@ So here does not put any confidencial information.
 directory. 
 
 12. To create static pages do the following steps : 
-    a. First create a static folder in main project.
-    b. In setting go to the documentation of static and copy STATICFILES_DIRS.
+    a. First create a static folder in main project and add some static content like: txt, image
+    b. In setting go to the documentation of static and copy "STATICFILES_DIRS" this defines
+        where is static directory in parent project. 
     c. Now we are creating only one static file so clear the var/www/static line.
-    d. Pate the code after static in setting. 
-    e. 
+    d. Paste the code after static in setting. 
+    e. And run the server and test by url/static/<static_file.txt>
+    f. We can see the file is visible to us directly.
+
+13. Static is only for public use and public can see it. 
+
+14. Moving to templates, in this we create the front of website, it has mainly HTML, CSS, JS.
+We have to integrate with bootstrap in order to create beautiful webpages. 
+
+15. Using template : 
+    a. Go to settings-->template-->dirs copy "[BASE_DIR / "<name_of_template_folder>"]" in the dirs list.
+        it will tell django that template directory is in base directory which is main project dir.
+    
+    b. Add an index.html file in template dir. Add some content in it.
+
+    c. Then in views use render("requests", <template_name>) to set views. 
