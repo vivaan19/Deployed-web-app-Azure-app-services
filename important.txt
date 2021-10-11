@@ -83,4 +83,13 @@ We have to integrate with bootstrap in order to create beautiful webpages.
     
     b. Add an index.html file in template dir. Add some content in it.
 
-    c. Then in views use render("requests", <template_name>) to set views. 
+    c. Then in views use render("requests", <template_name>) to set views.
+
+16. Send variables to a template : 
+Steps:
+    a. First put {{ varibale }} placeholder in the HTML body.
+    b. In views make a dictionary of name let say content and add variable_name as key and
+        its content as value. 
+    c. In the required function add the third parameter of render as the name of dictionary i.e content here.
+    d. save it and run the server. 
+    
