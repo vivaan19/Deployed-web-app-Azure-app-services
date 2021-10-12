@@ -9,5 +9,4 @@ urlpatterns = [
     path("services", views.services, name="Sample_app"),
     path("connect", views.connect, name="Sample_app"),
     # path("", views.extend_1, name="Sample_app"),
-
 ]
