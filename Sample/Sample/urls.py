@@ -17,9 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
-admin.site.site_header = "A"
-admin.site.site_title = "B"
-admin.site.index_title = "C"
+admin.site.site_header = "<Admin Name header>"
+admin.site.site_title = "<Login Title>"
+admin.site.index_title = "<Index Title>"
 
 urlpatterns = [
     path('admin/', admin.site.urls),

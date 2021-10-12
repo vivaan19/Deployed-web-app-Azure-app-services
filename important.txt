@@ -1,3 +1,5 @@
+This was about basic Django Web Usage. 
+
 1.To start a project in django 
 django-admin startproject <Name_of_project>
 This will create a folder of project_name and in it 
@@ -108,4 +110,5 @@ python manage.py createsuperuser
 admin.site.site_header = ""
 admin.site.site_title = ""
 admin.site.index_title = ""
-in main priject urls file. 
+in main priject urls file.
+Admin page is the main backend for a website, all data will be stored here.
