@@ -1,0 +1,12 @@
+This is about How to Make Websites Using bootstrap and handle with django. 
+
+1. Use of template inheritance, this means that we can extend the features of a base template
+    including its own and adding our own. 
+Ex: 
+-->Base_Template.html 
+   --> extend1.html
+   --> extend2.html
+   --> extend3.html
+Here it means that Base_Template.html is serving as a base template for all extend htmls. 
+The function can be extended in base by code blocks provided by django. 
+
