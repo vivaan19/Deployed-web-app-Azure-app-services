@@ -1,11 +1,10 @@
 from django.shortcuts import render ,HttpResponse
 
 
-
 def index(request):  # this returns to home page. 
     # return HttpResponse("Hello World Changed the home page of django !!!")
-    return render(request, "base_myboot.html")
-    
+    return render(request, "index.html")
+
 def about(request):
     # return HttpResponse("This is about page !!!")
     return render(request, "about.html")
@@ -15,8 +14,8 @@ def contact(request):
     return render(request, "contact.html")
 
 def services(request):
-    return HttpResponse("This is services page !")
-    # return render(request, "myboot_website.html")
+    # return HttpResponse("This is services page !")
+    return render(request, "services.html")
 
 # def connect(request):
 #     return HttpResponse("This is connect with us page !")

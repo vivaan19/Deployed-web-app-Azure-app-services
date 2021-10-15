@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+{% extends 'base_myboot.html' %}
+{% comment %} This is index page it will change the looks of home page {% endcomment %}
+
+{% block title %}home{% endblock title %}
+
+{% block body %}This is Index page will edit home{% endblock body %}
+
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,4 +18,5 @@
     <p>This is Body of my sample page</p>
     <p>The value of a varible is {{ variable }}</p>
 </body>
-</html>
+</html> {% endcomment %}
+

@@ -10,3 +10,4 @@ Ex:
 Here it means that Base_Template.html is serving as a base template for all extend htmls. 
 The function can be extended in base by code blocks provided by django. 
 
+2. 
