@@ -1,2 +1,2 @@
 # Django_Tutorials
-Learning about Django for Web Applications. 
+Learning about Django and Bootstrap to create responsive and robust website. 
