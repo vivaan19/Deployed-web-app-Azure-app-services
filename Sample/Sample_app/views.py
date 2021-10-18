@@ -1,5 +1,7 @@
 from django.shortcuts import render ,HttpResponse
-
+from Sample_app.models import Contact
+from datetime import datetime
+from django.contrib import messages
 
 def index(request):  # this returns to home page. 
     # return HttpResponse("Hello World Changed the home page of django !!!")
@@ -11,6 +13,14 @@ def about(request):
 
 def contact(request):
     # return HttpResponse("This is a contact page !!!")
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        desc= request.POST.get('desc')
+        contact=Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
+        contact.save()
+        messages.success(request, 'Your message has been sent!')
     return render(request, "contact.html")
 
 def services(request):
