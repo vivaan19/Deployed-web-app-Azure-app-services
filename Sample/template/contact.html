@@ -6,11 +6,10 @@
 {% block body %}
 <div class="container-fluid p-0">
   <img src="https://source.unsplash.com/idhx-MOCDSk/1100x430" class="d-block w-100" alt="...">
+  <h1 class="my-4 text-center display-3 ">Enter Your Details</h1>
 </div>
 
-<h1 class="my-4 text-center">Enter Your Details</h1>
-
-<div class="container py-3">
+<div class="container py-2">
   <form method = "post" action = "/contact">
   {% csrf_token %}
 
