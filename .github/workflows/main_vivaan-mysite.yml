@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'vivaan-mysite'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA5EBD04BC7479E950C6EA67F2DAC41 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67CD75187695472894F36A2EFB3B3E54 }}
